@@ -1,115 +1,96 @@
-<head>
-    <title>WEB1- Welcome</title>
-    <meta charset="utf-8">
+<!doctype html>
+<html>
+    <head>
+        <title>WEB - SSIBAL</title><input type="button" value="night" onclick="
+        document.querySelector('body').style.backgroundColor = 'black';
+        document.querySelector('body').style.color = 'white';
+      ">
+      <input type="button" value="day" onclick="
+        document.querySelector('body').style.backgroundColor = 'white';
+        document.querySelector('body').style.color = 'black';
+      ">
+        <meta charset="utf-8">
         <style>
+            body {
+                margin: 0;
+            }
             a {
                 color: black;
+                text-decoration: none;
             }
             h1 {
-                font-size: 80px;
+                font-size: 45px;
                 text-align: center;
+                border-bottom: 1px solid gray;
+                margin: 0;
+                padding: 20px;
             }
-
-            #active {
-                color: red;
+            ol {
+                border-right: 1px solid gray;
+                width: 100px;
+                margin: 0;
+                padding: 20px;
             }
-            .saw {
-                color: gray;
+            #grid {
+                display: grid;
+                grid-template-columns: 150px 1fr;
+            }
+            #grid ol {
+                padding-left: 33px;
+            }
+            #grid #article {
+                padding-left: 25px;
+            }
+            @media(max-width:800px) {
+                #grid {
+                    display: block;
+                }
+                ol {
+                    border-right: none;
+                }
+                h1 {
+                    border-bottom: none;
+                }
             }
         </style>
     </head>
-
+    <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';
+  ">
+  <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';
+  ">
     <body>
         <h1>
             <a href="index.html">WEB</a>
         </h1>
-        <input type="button" value="night" onclick="
-        document.querySelector('body').style.backgroundColor = 'black';
-        document.querySelector('body').style.color = 'white';
-        ">
-        <input type="button" value="day" onclick="
-        document.querySelector('body').style.backgroundColor = 'white';
-        document.querySelector('body').style.color = 'black';
-        ">
-        
-                <ul>
-                    <li>
-                        <a href="1.html" class="saw">HTML</a>
-                    </li>
-                    <li>
-                        <a href="2.html" class="saw" id="active">CSS</a>
-                    </li>
-                    <li>
-                        <a href="3.html">JavaScript</a>
-                    </li>
-                </ul>
-                <!--h1><a href="index.html"><font color="red">WEB</font></a></h1> <ul> <li><a
-                href="1.html"><font color="red">HTML</font></a></li> <li><a href="2.html"><font
-                color="red">CSS</font></a></li> <li><a href="3.html"><font
-                color="red">JavaScript</font></a></li> </ul>-->
-                <h2 style="background-color: bisque;">WEB이란 무엇인가?"</h2>
+        <div id="grid">
+            <ol>
+                <li>
+                    <a href="1.html">HTML</a>
+                </li>
+                <li>
+                    <a href="2.html">CSS</a>
+                </li>
+                <li>
+                    <a href="3.html">JavaScript</a>
+                </li>
+            </ol>
+            <div id="article">
+                <h2>CSS</h2>
                 <p>
-                    <iframe
-                        width="560"
-                        height="315"
-                        src="https://www.youtube.com/embed/yjuwpf7VH74"
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen="allowfullscreen"></iframe>
+                    Cascading Style Sheets (CSS) is a style sheet language used for describing the
+                    presentation of a document written in a markup language.[1] Although most often
+                    used to set the visual style of web pages and user interfaces written in HTML
+                    and XHTML, the language can be applied to any XML document, including plain XML,
+                    SVG and XUL, and is applicable to rendering in speech, or on other media. Along
+                    with HTML and JavaScript, CSS is a cornerstone technology used by most websites
+                    to create visually engaging webpages, user interfaces for web applications, and
+                    user interfaces for many mobile applications.
                 </p>
-
-                <p>The World Wide Web (WWW), commonly known as the Web, is an information system
-                    where documents and other web resources are identified by Uniform Resource
-                    Locators (URLs, such as https://example.com/), which may be interlinked by
-                    hyperlinks, and are accessible over the Internet.[1][2] The resources of the Web
-                    are transferred via the Hypertext Transfer Protocol (HTTP), may be accessed by
-                    users by a software application called a web browser, and are published by a
-                    software application called a web server. The World Wide Web is not synonymous
-                    with the Internet, which pre-dated the Web in some form by over two decades and
-                    upon the technologies of which the Web is built.</p>
-
-                <p>
-                    <div id="disqus_thread"></div>
-                    <script>
-                        /**
-    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-                        /*
-    var disqus_config = function () {
-    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-    };
-    */
-                        (function () { // DON'T EDIT BELOW THIS LINE
-                            var d = document,
-                                s = d.createElement('script');
-                            s.src = 'https://web-project-7.disqus.com/embed.js';
-                            s.setAttribute('data-timestamp', + new Date());
-                            (d.head || d.body).appendChild(s);
-                        })();
-                    </script>
-                    <noscript>Please enable JavaScript to view the
-                        <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-                    </noscript>
-                </p>
-                <p>
-                    <!--Start of Tawk.to Script-->
-                    <script type="text/javascript">
-                        var Tawk_API = Tawk_API || {},
-                            Tawk_LoadStart = new Date();
-                        (function () {
-                            var s1 = document.createElement("script"),
-                                s0 = document.getElementsByTagName("script")[0];
-                            s1.async = true;
-                            s1.src = 'https://embed.tawk.to/61e6c7c3f7cf527e84d2c154/1fpmnokv6';
-                            s1.charset = 'UTF-8';
-                            s1.setAttribute('crossorigin', '*');
-                            s0
-                                .parentNode
-                                .insertBefore(s1, s0);
-                        })();
-                    </script>
-                    <!--End of Tawk.to Script-->
-                </p>
-            </body>
+            </div>
+        </div>
+    </body>
+</html>
