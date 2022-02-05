@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="kr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,19 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>비교연산자 & Boolean</h1>
-    <h2>===</h2>
-    <h3>1 === 1</h3>
+    <h1>test</h1>
     <script>
-        document.write(1===1);
+        var coworkers = ['1', '2', '3', '4', '5'];
     </script>
-    <h3>1 === 2</h3>
-    <script>
-    document.write(1===2);
-    </script>   
-    <h3>1 &lt; 2</h3>
-    <script>
-    document.write(1 < 2);
-    </script>   
+    <h2>co workers</h2>
+    <ul>
+        <script>
+            var i = 0;
+            while (i < coworkers.lenght){ 
+                document.write('<li>' + coworkers[i] + '</li>');
+            i = i + 1;
+        }
+        </script>
+    </ul>
 </body>
 </html>
